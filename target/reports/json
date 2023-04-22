@@ -1,0 +1,106 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-04-18T05:13:28.531Z",
+        "line": 3,
+        "name": "User should be able to  set the SkyBlue background",
+        "description": "",
+        "id": "change-to-sky-blue-background;user-should-be-able-to--set-the-skyblue-background",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2129538500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the todolist page",
+            "match": {
+              "location": "steps.BackgroundStepDefinition.user_is_on_the_todolist_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 135895000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click on the skyblue backgroud button",
+            "match": {
+              "location": "steps.BackgroundStepDefinition.user_click_on_the_skyblue_backgroud_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the background color will change to sky blue",
+            "match": {
+              "location": "steps.BackgroundStepDefinition.the_background_color_will_change_to_sky_blue()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-18T05:13:30.878Z",
+        "line": 10,
+        "name": "User should be able to  set the White background",
+        "description": "",
+        "id": "change-to-sky-blue-background;user-should-be-able-to--set-the-white-background",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1683403200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on the todolist page",
+            "match": {
+              "location": "steps.BackgroundStepDefinition.user_is_on_the_todolist_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69209800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on the white backgroud button",
+            "match": {
+              "location": "steps.BackgroundStepDefinition.user_click_on_the_white_backgroud_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the background color will change to white",
+            "match": {
+              "location": "steps.BackgroundStepDefinition.the_background_color_will_change_to_white()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Change to Sky Blue Background",
+    "description": "",
+    "id": "change-to-sky-blue-background",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ChangeBackground.feature",
+    "tags": []
+  }
+]
