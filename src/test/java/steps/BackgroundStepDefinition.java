@@ -1,5 +1,8 @@
 package steps;
 
+import java.io.IOException;
+
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
 import io.cucumber.java.en.Given;
@@ -17,27 +20,40 @@ public class BackgroundStepDefinition extends TestBase{
 	}
 
 	@When("user click on the skyblue backgroud button")
-	public void user_click_on_the_skyblue_backgroud_button() {
+	public void user_click_on_the_skyblue_backgroud_button() throws IOException, InterruptedException {
 		TodoListPage todolistpage =PageFactory.initElements(driver, TodoListPage.class);
 		todolistpage.clickTheBlueBackgroundButton();
+		getBackgroundColor();
+		
+		takeScreenShot("SkyBlue_Backgroud");
+		Thread.sleep(3000);
+		//tearDown();
 
 	}
 
 	@Then("the background color will change to sky blue")
 	public void the_background_color_will_change_to_sky_blue() {
+		
 		System.out.println("Backgroud is changed to  Blue");
+		
+		
 
 	}
 
 	@When("user click on the white backgroud button")
-	public void user_click_on_the_white_backgroud_button() {
+	public void user_click_on_the_white_backgroud_button() throws IOException, InterruptedException {
 		TodoListPage todolistpage =PageFactory.initElements(driver, TodoListPage.class);
 		todolistpage.clickTheWhiteBackgroundButton();
+		getBackgroundColor();
+		takeScreenShot("White_background");
+		Thread.sleep(3000);
+		tearDown();
 
 	}
+	
 	@Then ("the background color will change to white")
 	public void the_background_color_will_change_to_white() {
-		
+				
 		System.out.println("Backgroud is changed to  White");
 
 	}
