@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src\\test\\resources\\features\\ChangeBackground.feature",
 		glue="steps",
-	//	tags="",
+		//tags="Scenario",
 		monochrome= true,
 		dryRun= false,
 		plugin= {
